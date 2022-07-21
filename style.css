@@ -22,13 +22,13 @@ body {
 }
 .track {
     height: 35vh;
-    width: 800vw;
+    width: 700vw;
     background-image: url(track.png);
     position: absolute;
     background-repeat: repeat-x;
     bottom: 0;
    
-    animation: carMove linear 7s infinite ;
+    animation: carMove linear 5s infinite ;
 }
 .car {
     height: 20vh;
@@ -45,15 +45,15 @@ body {
 .wheel1 img {
         position: relative;
         width: 7vw;
-        bottom: -8vh;
-        left: 4.67vw;
+        bottom: -2vh;
+        left: 4.65vw;
         animation: wheelRotation linear .6s infinite ;
 }
 .wheel2 img {
     position: relative;
         width: 7.7vw;
-        bottom: 6.5vh;
-        left: 23.4vw;
+        bottom: 2vh;
+        left: 23.5vw;
         animation: wheelRotation linear .6s infinite ;
 }
 @keyframes wheelRotation {
@@ -75,5 +75,13 @@ body {
     }
     100% {
         transform: translateY(-50px);
-    } */
+    */
+}
+@media  (min-width: 768px){
+  .trees, .sky{
+    width: 150%;
+  }
+  .wheel2 img{
+    bottom: 1.6vh;
+  }
 }
